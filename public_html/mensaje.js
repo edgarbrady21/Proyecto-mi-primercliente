@@ -31,7 +31,7 @@ $("#boton").click(function(){
     //alert("Me has apretado");
     
     $.ajax({
-        url:'http://localhost:9090/mensaje/hola/tengo hambre',
+        url:'http://localhost:9090/mensaje/hola/Edgar Hernandez',
         type:'post',
         success:function(datos){
             $("#etiqueta").html(datos);
@@ -64,11 +64,11 @@ $("#boton-buscartodos").click(function(){
 
 });
 
-$("#boton-buscartodos").click(function(){
+$("#boton-actualizar").click(function(){
     //alert("Me has apretado");
     
     $.ajax({
-        url:'http://localhost:9090/mensaje/4/nuevo/ya cambio',
+        url:'http://localhost:9090/mensaje/4/nuevo/adios',
         type:'put',
         success:function(datos){
             console.log("sasasa"+datos.length);
@@ -78,7 +78,7 @@ $("#boton-buscartodos").click(function(){
     });
 });
 
-$("#boton-buscartodos").click(function(){
+$("#boton-borrar").click(function(){
     //alert("Me has apretado");
     
     $.ajax({
@@ -90,4 +90,18 @@ $("#boton-buscartodos").click(function(){
     }
         
     });
+    
+    $("#boton-enviar").click(function(){
+    //alert("Me has apretado");
+    
+    $.ajax({
+        url:'http://localhost:9090/mensaje/formulario/formulario2',
+        type:'get',
+        success:function(datos){
+            console.log("sasasa"+datos.length);
+            $("#etiqueta").value(datos);
+    }
+        
+    });
+});
 });

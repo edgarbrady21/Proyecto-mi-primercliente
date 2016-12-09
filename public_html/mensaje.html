@@ -6,24 +6,38 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Video Gamer</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
         <script src="node_modules/jquery/dist/jquery.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <h1>Proyecto Final Java 3</h1>
-        <button  class="btn btn-danger" id="boton">Este es un boton</button>
+    <body background="Gameover.png" >
+        <font color="blue">
+        
+        <h1>Los mejores Juegos del Año</h1>
+        <div class="form-inline">
+  <div class="form-group">
+    <label for="formulario">Nombre</label>
+    <input type="text" class="form-control" id="formulario" placeholder="Ingresar Nombre">
+  </div>
+  <div class="form-group">
+    <label for="formulario2">Descripcion</label>
+    <input type="text" class="form-control" id="formulario2" placeholder="Xbox PS4 WiiU">
+  </div>
+  <button id="boton-enviar" class="btn btn-default">Enviar</button>
+</div>
+        <p></p>
+        <button  class="btn btn-danger" id="boton">Guardar</button>
         <div id="etiqueta">Esta es una etiqueta</div>
         <button id="boton-buscartodos" class="btn btn-success">Buscar Todos </button>
         <button id="boton-actualizar" class="btn btn-default">Actualizar</button>
        <button id="boton-borrar" class="btn btn-primary">Borrar</button>
         
        <div class="container">
-           <h2>Tabla simple</h2>
-           <p>Tablita que muestra los mensajes guardados en mysql</p>
-           <table class="table table-striped">
+           <h2>Busqueda de Vieojuegos</h2>
+           <p>Top 10 de los mejores videojuegos del año</p>
+           <table class="table table-bordered">
                <thead>
                    <tr class="bg-danger">
                        <th>titulo</th>
@@ -40,7 +54,8 @@ and open the template in the editor.
        </div>
        
         <script src="mensaje.js"></script>
+        </font>
     </body>
     
-    
+   
 </html>
